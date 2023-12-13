@@ -2,6 +2,8 @@ package com.joonhan.springwithreact;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.Arrays;
+
 public class App02HelloWorldSpring {
     public static void main(String[] args) {
 
@@ -13,6 +15,9 @@ public class App02HelloWorldSpring {
         System.out.println(context.getBean("person3Parameters"));
         System.out.println(context.getBean("address2"));
         System.out.println(context.getBean("address3"));
-//        System.out.println(context.getBean(Address.class)); // 클래스로 객체 호출 가능
+        System.out.println(context.getBean(Address.class)); // 클래스로 객체 호출 가능
+        System.out.println(context.getBean(Person.class));
+        System.out.println(context.getBean("person5Qualifier"));
+//        Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
     }
 }
