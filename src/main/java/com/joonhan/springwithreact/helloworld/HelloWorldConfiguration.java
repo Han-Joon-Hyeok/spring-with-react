@@ -1,4 +1,4 @@
-package com.joonhan.springwithreact;
+package com.joonhan.springwithreact.helloworld;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
